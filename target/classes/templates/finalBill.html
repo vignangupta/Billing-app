@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>finalBill</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<body>
+
+<table>
+	<tr>
+		<td> Product Name: </td>
+		<td><p th:text="${name}" /></td>
+	</tr>
+	<tr>
+		<td> Product Category: </td>
+		<td> <p th:text="${category}" /> </td>
+	</tr>
+	<tr>
+		<td> Product Description: </td>
+		<td> <p th:text="${description}" /> </td>
+	</tr>
+	<tr>
+		<td> Product Price: </td>
+		<td> <p th:text="${price}" /> </td>
+	</tr>
+	<tr>
+		<td> Quantity: </td>
+		<td> <p th:text="${quantity}" /> </td>
+	</tr>
+	<tr>
+		<td> Line Total (Rs): </td>
+		<td> <p th:text="${totalPrice}" /> </td>
+	</tr>
+</table>
+<br>
+<a href='http://127.1.1.0:8080/home'>Back</a>
+</body>
+</html>
